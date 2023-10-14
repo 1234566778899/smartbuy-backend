@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.send('v.1.0.0')
 })
 
-app.use('/', require('./routes/User'))
+app.use('/user', require('./routes/User'))
 
 app.listen(4000, () => {
     console.log('server running on port 3000')
